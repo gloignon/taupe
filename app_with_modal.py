@@ -5,6 +5,7 @@ import tempfile
 import pandas as pd
 import spacy
 import subprocess
+from html import escape
 
 # Ensure the spaCy French model is downloaded
 try:
@@ -19,15 +20,13 @@ def lemmatize_text(text):
     doc = nlp(text)
     return " ".join([token.lemma_ for token in doc])
 
-# Global variables to store the corpus
-raw_corpus = {}  # To store raw texts
-lemmatized_corpus = {}  # To store lemmatized texts
-initial_df = pd.DataFrame()
+# Global variable to store the lemmatized texts
+lemmatized_corpus = {}
+keywords = []
 
 # Function to process the zip file, lemmatize text, get document names, and calculate word counts
 def process_zip_initial(zip_file):
-    global raw_corpus, lemmatized_corpus, initial_df  # To store the raw texts, lemmatized texts, and DataFrame
-    raw_corpus = {}
+    global lemmatized_corpus  # To store the lemmatized texts
     lemmatized_corpus = {}  # Reset the corpus on new upload
 
     # Create a temporary directory to extract files
@@ -45,41 +44,33 @@ def process_zip_initial(zip_file):
                     file_path = os.path.join(root, file)
                     txt_files.append(os.path.basename(file_path))  # Only the file name
                     
-                    # Read the text
+                    # Read and lemmatize text
                     with open(file_path, 'r', encoding='utf-8') as f:
                         text = f.read()
                         word_count = len(text.split())  # Split text by spaces to count words
                         word_counts.append(word_count)
-
-                        # Store raw text in raw_corpus
-                        raw_corpus[os.path.basename(file_path)] = text.lower()
 
                         # Lemmatize the text and store in lemmatized_corpus
                         lemmatized_text = lemmatize_text(text.lower())
                         lemmatized_corpus[os.path.basename(file_path)] = lemmatized_text
         
         # Create a DataFrame with document names and word counts
-        initial_df = pd.DataFrame({"Nom du document": txt_files, "N. mots": word_counts})
+        df = pd.DataFrame({"Nom du document": txt_files, "N. mots": word_counts})
         
-        return initial_df
+        return df
 
-# Function to search for keywords in the selected corpus (raw or lemmatized)
-def process_zip_and_search(keywords_text, search_mode):
-    global raw_corpus, lemmatized_corpus, initial_df  # Use the texts stored at corpus upload and initial DataFrame
-
-    # Read the keywords (no lemmatization of keywords)
-    keywords = [(keyword.strip().lower()) for keyword in keywords_text.strip().split("\n") if keyword.strip()]
-    
-    # Select the appropriate corpus based on the search mode
-    corpus = lemmatized_corpus if search_mode == "Lemmes" else raw_corpus
+# Function to search for keywords in the lemmatized corpus (without lemmatizing keywords)
+def process_zip_and_search(keywords_text):
+    global lemmatized_corpus, keywords  # Use the lemmatized texts stored at corpus upload
+    keywords = [keyword.strip().lower() for keyword in keywords_text.strip().split("\n") if keyword.strip()]
     
     # Prepare a dictionary to store the results (initialize with Document Name and empty results)
-    results = {doc_name: {keyword: "" for keyword in keywords} for doc_name in corpus.keys()}
+    results = {doc_name: {keyword: "" for keyword in keywords} for doc_name in lemmatized_corpus.keys()}
     
-    # Search for keyword frequencies in each text file
-    for doc_name, text in corpus.items():
+    # Search for keyword frequencies in each lemmatized text file
+    for doc_name, lemmatized_text in lemmatized_corpus.items():
         for keyword in keywords:
-            keyword_count = text.count(keyword)  # Count occurrences of each keyword
+            keyword_count = lemmatized_text.count(keyword)  # Count occurrences of the keyword in lemmatized text
             if keyword_count > 0:
                 results[doc_name][keyword] = keyword_count
     
@@ -95,10 +86,21 @@ def process_zip_and_search(keywords_text, search_mode):
     # Replace 0 frequencies with empty strings
     df_keywords.replace(0, "", inplace=True)
     
-    # Merge the initial DataFrame with the keyword search results
-    final_df = pd.merge(initial_df, df_keywords, on="Nom du document", how="left")
+    return df_keywords
+
+# Function to display the lemmatized text with highlighted keywords
+def display_lemmatized_text(doc_name):
+    global lemmatized_corpus, keywords
+    lemmatized_text = lemmatized_corpus.get(doc_name, "")
     
-    return final_df
+    # Escape HTML characters for safe display
+    lemmatized_text = escape(lemmatized_text)
+    
+    # Highlight keywords by wrapping them in a <mark> tag
+    for keyword in keywords:
+        lemmatized_text = lemmatized_text.replace(keyword, f"<mark>{keyword}</mark>")
+    
+    return lemmatized_text
 
 # Function to export the DataFrame to Excel
 def export_to_excel(df):
@@ -122,17 +124,16 @@ with gr.Blocks() as demo:
         keywords_input = gr.Textbox(label="Entrez les mots clés (un par ligne, peuvent contenir plus d'un mot)", placeholder="mots-clés...", lines=10)
     
     with gr.Row():
-        # Switch button to select between raw tokens and lemmatized search
-        search_mode = gr.Radio(label="Choisissez le type de recherche", choices=["Mots", "Lemmes"], value="Lemmes")
-
-    with gr.Row():
         # Button to trigger keyword search
         search_button = gr.Button("Recherche")
     
     # Output the final results table after the search button
     with gr.Row():
         result_table = gr.DataFrame(label="Résultats", col_count=(1, "dynamic"), interactive=False, max_height=600)  # Disable renaming/editing
-    
+
+    # Create an HTML component to display the lemmatized text with highlighted keywords
+    lemmatized_display = gr.HTML()
+
     # Button to trigger the Excel export
     with gr.Row():
         export_button = gr.Button("Exporter vers Excel (.xlsx)")
@@ -141,9 +142,17 @@ with gr.Blocks() as demo:
     # Action to display document names and lemmatized text upon ZIP upload
     zip_file_input.change(fn=process_zip_initial, inputs=zip_file_input, outputs=result_table)
     
-    # Action to update the table with keywords and results based on the selected search mode
-    search_button.click(fn=process_zip_and_search, inputs=[keywords_input, search_mode], outputs=result_table)
+    # Action to update the table with keywords and results
+    search_button.click(fn=process_zip_and_search, inputs=keywords_input, outputs=result_table)
     
+    # Function to update the lemmatized text display with highlighted keywords
+    def open_lemmatized_text(doc_name):
+        highlighted_text = display_lemmatized_text(doc_name)
+        lemmatized_display.update(highlighted_text)
+
+    # Create dynamic buttons for each document name in the result table to trigger the text display
+    result_table.select(fn=open_lemmatized_text, inputs="index", outputs=lemmatized_display)
+
     # Action to export the results to Excel
     export_button.click(fn=export_to_excel, inputs=result_table, outputs=download_link)
 
