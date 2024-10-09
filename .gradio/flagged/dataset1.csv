@@ -1,0 +1,277 @@
+Upload ZIP file containing .txt files,Enter keywords (one per line),Search Results,timestamp
+.gradio\flagged\Upload ZIP file containing .txt files\36d9fdfbe43d33f39fb9\ledevoir_2021.zip,"en ligne
+à distance
+Teams
+Zoom
+présentiel
+numérique
+","File: article_starting_at_page_10.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_10.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_10.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_10.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_10.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_10.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_12.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_12.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_12.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_12.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_12.txt, Keyword: présentiel, Found: Yes
+File: article_starting_at_page_12.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_14.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_14.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_14.txt, Keyword: Teams, Found: Yes
+File: article_starting_at_page_14.txt, Keyword: Zoom, Found: Yes
+File: article_starting_at_page_14.txt, Keyword: présentiel, Found: Yes
+File: article_starting_at_page_14.txt, Keyword: numérique, Found: Yes
+File: article_starting_at_page_16.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_16.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_16.txt, Keyword: Teams, Found: Yes
+File: article_starting_at_page_16.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_16.txt, Keyword: présentiel, Found: Yes
+File: article_starting_at_page_16.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_18.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_18.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_18.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_18.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_18.txt, Keyword: présentiel, Found: Yes
+File: article_starting_at_page_18.txt, Keyword: numérique, Found: Yes
+File: article_starting_at_page_20.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_20.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_20.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_20.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_20.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_20.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_22.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_22.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_22.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_22.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_22.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_22.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_25.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_25.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_25.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_25.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_25.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_25.txt, Keyword: numérique, Found: Yes
+File: article_starting_at_page_27.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_27.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_27.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_27.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_27.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_27.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_29.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_29.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_29.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_29.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_29.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_29.txt, Keyword: numérique, Found: Yes
+File: article_starting_at_page_31.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_31.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_31.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_31.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_31.txt, Keyword: présentiel, Found: Yes
+File: article_starting_at_page_31.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_33.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_33.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_33.txt, Keyword: Teams, Found: Yes
+File: article_starting_at_page_33.txt, Keyword: Zoom, Found: Yes
+File: article_starting_at_page_33.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_33.txt, Keyword: numérique, Found: Yes
+File: article_starting_at_page_35.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_35.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_35.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_35.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_35.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_35.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_37.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_37.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_37.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_37.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_37.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_37.txt, Keyword: numérique, Found: Yes
+File: article_starting_at_page_39.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_39.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_39.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_39.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_39.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_39.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_41.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_41.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_41.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_41.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_41.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_41.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_43.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_43.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_43.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_43.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_43.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_43.txt, Keyword: numérique, Found: Yes
+File: article_starting_at_page_45.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_45.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_45.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_45.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_45.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_45.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_47.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_47.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_47.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_47.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_47.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_47.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_49.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_49.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_49.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_49.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_49.txt, Keyword: présentiel, Found: Yes
+File: article_starting_at_page_49.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_51.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_51.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_51.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_51.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_51.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_51.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_52.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_52.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_52.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_52.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_52.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_52.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_54.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_54.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_54.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_54.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_54.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_54.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_56.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_56.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_56.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_56.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_56.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_56.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_58.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_58.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_58.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_58.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_58.txt, Keyword: présentiel, Found: Yes
+File: article_starting_at_page_58.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_60.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_60.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_60.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_60.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_60.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_60.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_62.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_62.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_62.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_62.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_62.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_62.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_64.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_64.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_64.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_64.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_64.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_64.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_66.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_66.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_66.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_66.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_66.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_66.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_68.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_68.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_68.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_68.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_68.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_68.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_7.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_7.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_7.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_7.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_7.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_7.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_70.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_70.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_70.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_70.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_70.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_70.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_72.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_72.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_72.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_72.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_72.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_72.txt, Keyword: numérique, Found: Yes
+File: article_starting_at_page_74.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_74.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_74.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_74.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_74.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_74.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_80.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_80.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_80.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_80.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_80.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_80.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_82.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_82.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_82.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_82.txt, Keyword: Zoom, Found: Yes
+File: article_starting_at_page_82.txt, Keyword: présentiel, Found: Yes
+File: article_starting_at_page_82.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_83.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_83.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_83.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_83.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_83.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_83.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_85.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_85.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_85.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_85.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_85.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_85.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_87.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_87.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_87.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_87.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_87.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_87.txt, Keyword: numérique, Found: Yes
+File: article_starting_at_page_89.txt, Keyword: en ligne, Found: Yes
+File: article_starting_at_page_89.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_89.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_89.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_89.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_89.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_91.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_91.txt, Keyword: à distance, Found: No
+File: article_starting_at_page_91.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_91.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_91.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_91.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_92.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_92.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_92.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_92.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_92.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_92.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_94.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_94.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_94.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_94.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_94.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_94.txt, Keyword: numérique, Found: No
+File: article_starting_at_page_96.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_96.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_96.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_96.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_96.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_96.txt, Keyword: numérique, Found: Yes
+File: article_starting_at_page_98.txt, Keyword: en ligne, Found: No
+File: article_starting_at_page_98.txt, Keyword: à distance, Found: Yes
+File: article_starting_at_page_98.txt, Keyword: Teams, Found: No
+File: article_starting_at_page_98.txt, Keyword: Zoom, Found: No
+File: article_starting_at_page_98.txt, Keyword: présentiel, Found: No
+File: article_starting_at_page_98.txt, Keyword: numérique, Found: No",2024-10-09 09:27:18.584761
