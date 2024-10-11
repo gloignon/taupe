@@ -68,37 +68,42 @@ def process_zip_and_search(keywords_text, search_mode):
     global raw_corpus, lemmatized_corpus, initial_df  # Use the texts stored at corpus upload and initial DataFrame
 
     # Read the keywords (no lemmatization of keywords)
-    keywords = [(keyword.strip().lower()) for keyword in keywords_text.strip().split("\n") if keyword.strip()]
-    
+    keywords = [keyword.strip().lower() for keyword in keywords_text.strip().split("\n") if keyword.strip()]
+
+    if not keywords:
+        # If no keywords are provided, return the initial DataFrame (without the keyword columns)
+        return initial_df
+
     # Select the appropriate corpus based on the search mode
     corpus = lemmatized_corpus if search_mode == "Lemmes" else raw_corpus
-    
+
     # Prepare a dictionary to store the results (initialize with Document Name and empty results)
     results = {doc_name: {keyword: "" for keyword in keywords} for doc_name in corpus.keys()}
-    
+
     # Search for keyword frequencies in each text file
     for doc_name, text in corpus.items():
         for keyword in keywords:
             keyword_count = text.count(keyword)  # Count occurrences of each keyword
             if keyword_count > 0:
                 results[doc_name][keyword] = keyword_count
-    
+
     # Convert the results dictionary to a DataFrame
     df_keywords = pd.DataFrame(results).T  # Transpose to have files as rows and keywords as columns
-    
+
     # Reset index to make the document names a column
     df_keywords.reset_index(inplace=True)
-    
+
     # Rename the first column to 'Nom du document'
     df_keywords.rename(columns={"index": "Nom du document"}, inplace=True)
-    
+
     # Replace 0 frequencies with empty strings
     df_keywords.replace(0, "", inplace=True)
-    
+
     # Merge the initial DataFrame with the keyword search results
     final_df = pd.merge(initial_df, df_keywords, on="Nom du document", how="left")
-    
+
     return final_df
+
 
 # Function to export the DataFrame to Excel
 def export_to_excel(df):
@@ -131,7 +136,7 @@ with gr.Blocks() as demo:
     
     # Output the final results table after the search button
     with gr.Row():
-        result_table = gr.DataFrame(label="Résultats", col_count=(1, "dynamic"), interactive=False, max_height=600)  # Disable renaming/editing
+        result_table = gr.DataFrame(label="Résultats", col_count=(1, "dynamic"), interactive=False)  # Disable renaming/editing
     
     # Button to trigger the Excel export
     with gr.Row():
